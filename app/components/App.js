@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Switch, Route, withRouter } from 'react-router-dom'
 import ReactGA from 'react-ga'
-import ProjectsView from 'Projects/Projects'
 import NotFound from 'NotFound/NotFound'
 import Header from 'Header/Header'
 import Footer from 'Footer/Footer'
@@ -31,7 +30,6 @@ class App extends Component {
       <main key='content' className='content'>
         <Switch key='routeSwitch' location={isModal ? this.previousLocation : location}>
           <Route exact path='/' component={Landing} />
-          <Route path='/projects' component={ProjectsView} />
           <Route component={NotFound} />
         </Switch>
       </main>,
