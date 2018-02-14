@@ -1,0 +1,17 @@
+.codeIcon {
+
+  .codeIcon--body {
+    height: 120px;
+    width: 120px;
+    background: pink;
+    margin: 0 auto;
+    transform: rotate(45deg);
+  }
+
+  p {
+    margin: 0;
+    text-align: center;
+    line-height: 120px;
+    transform: rotate(-45deg);
+  }
+}

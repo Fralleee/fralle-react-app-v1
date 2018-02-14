@@ -1,0 +1,12 @@
+.social {
+  display: block;
+  .path {
+    fill: #949494;
+  }
+
+  &:hover {
+    .path {
+      fill: #b4b4b4;      
+    }
+  }
+}

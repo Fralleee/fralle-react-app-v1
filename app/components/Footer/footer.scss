@@ -1,0 +1,20 @@
+  .footer {    
+    padding: 50px 0;
+    min-height: 250px;
+    background: #1e1e1e;
+    .footer__title {
+      width: 100%;
+      text-align: center;
+      margin: 25px 0;
+      color: #A4A4A4;
+    }
+    .footer__links {      
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      & * {
+        margin: 10px;
+      }
+    }
+  }

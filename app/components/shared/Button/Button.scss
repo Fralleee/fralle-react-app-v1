@@ -1,0 +1,67 @@
+@import '../../../styles/_colors';
+
+/* #region reset button style */
+[role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  box-sizing: content-box;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-appearance: button;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+[role="button"] {
+  color: inherit;
+  cursor: default;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  white-space: pre;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+/* #endregion */
+
+.btn {
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  font-size: 1.25rem;
+  // font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-transform: uppercase;  
+  color: $body;  
+
+  &.primary{
+    background-color: $primary;
+  }
+  &.secondary{
+    background-color: $secondary;
+  }
+}

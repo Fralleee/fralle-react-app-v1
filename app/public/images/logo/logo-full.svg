@@ -1,0 +1,23 @@
+<svg width="90mm" height="11.854mm" version="1.1" viewBox="0 0 90.000429 11.854" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(1.9152 -1.1095e-5)" fill="#e1e1e1" stroke-width=".26458">
+  <path d="m78.23 0v11.854h3.9v-8.8393h5.735v-3.0143zm4.1 4.4028v2.8789h4.841v-2.8789zm0 4.4364v3.0143h5.7552v-3.0143z"/>
+  <path d="m66.779 0v11.854h3.9961v-11.854zm4.1961 8.7545v3.099h5.1511v-3.099z"/>
+  <path d="m55.328 0v11.854h3.9961v-11.854zm4.1961 8.7545v3.099h5.1511v-3.099z"/>
+  <path d="m44.564 0-5.1816 11.854h4.0644l3.0174-7.8698 0.0083 0.0031 0.02222-0.057878 1.1514 2.9802h-2.0893l-1.1038 2.8784h4.2938l0.79582 2.066h4.1315l-5.1816-11.854z"/>
+  <path d="m27.068 0v11.854h3.9961v-8.7716h1.4562c0.54187 0 0.94811 0.12423 1.219 0.37259 0.27093 0.23707 0.40669 0.57569 0.40669 1.016 0 0.44027-0.13576 0.78466-0.40669 1.033-0.27093 0.23707-0.67718 0.35553-1.219 0.35553h-1.2563v3.0143h0.88367l2.0149 2.9802h4.2674l-2.4893-3.6577c0.72249-0.37253 1.2755-0.87471 1.6593-1.5069 0.38382-0.63218 0.57568-1.3718 0.57568-2.2185 0-0.90311-0.22016-1.6931-0.66042-2.3704-0.44027-0.67733-1.0667-1.1968-1.8795-1.558-0.8128-0.36124-1.7668-0.54208-2.8618-0.54208z"/>
+  <path d="m15.154 0v11.854h3.9967v-8.8393h5.6384v-3.0143zm4.1966 5.0462v3.0143h4.7444v-3.0143z"/>
+ </g>
+ <g transform="matrix(1.7103 0 0 1.7103 -4.1618 -4.2108)">
+  <rect x="2.4333" y="2.4336" width="1.2547" height="1.2547" fill="#e1e1e1" style="paint-order:stroke fill markers"/>
+  <rect x="8.1673" y="2.4336" width="1.2547" height="1.2547" fill="#e1e1e1" style="paint-order:stroke fill markers"/>
+  <rect x="8.1673" y="8.1664" width="1.2547" height="1.2547" fill="#969696" style="paint-order:stroke fill markers"/>
+  <g fill="#e1e1e1">
+   <rect x="2.4333" y="8.1664" width="1.2547" height="1.2547" style="paint-order:stroke fill markers"/>
+   <rect x="2.4417" y="5.2998" width="1.2547" height="1.2547" style="paint-order:stroke fill markers"/>
+   <rect x="5.3003" y="5.2998" width="1.2547" height="1.2547" style="paint-order:stroke fill markers"/>
+   <rect x="5.3003" y="2.4504" width="1.2547" height="1.2547" style="paint-order:stroke fill markers"/>
+  </g>
+  <rect x="5.3003" y="8.1664" width="1.2547" height="1.2547" fill="#b9b9b9" style="paint-order:stroke fill markers"/>
+  <rect x="8.1674" y="5.2998" width="1.2547" height="1.2547" fill="#b9b9b9" style="paint-order:stroke fill markers"/>
+ </g>
+</svg>
