@@ -1,68 +1,26 @@
+@import '_colors.scss';
+
 body {
+  margin: 0;
   background-color: $bg;
-  font-family: 'Open Sans', 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
   overflow-y: scroll;
   overflow-x: hidden;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  h1,h2,h3,h4,h5 {
-    margin: 0;   
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase; 
-    text-align: center;
-    color: $heading;
-    text-shadow: 0 0 2px $textShadow;
-  }
-
-  h1 {
-    font-size: 2.5em;
-  }
-  h2 {
-    font-size: 1.75em;
-  }
-  h3 {
-    font-size: 1.5em;
-  }
-  h4 {
-    font-size: 1.35em;
-  }
-  h5 {
-    font-size: 1.25em;
-  }
-  
-  p {
-    text-align: justify;
-    font-size: 1.125em;
-    max-width: 60ch;
-    line-height: 1.6;
-    color: $body;
-    text-shadow: 0 0 1px $textShadow;
-  }
 
   a:hover {
     text-decoration: none;
   }
 
-  .input {
-    display: inline-block;
-    margin-right: 10px;
-    margin-bottom: 10px;
-  }
-
   section {    
     position: relative;
     display: flex;
+    height: 90vh;
   }
 
   ::selection {
-    background: #f0a540;
+    background: $yellow;
   }
   ::-moz-selection {
-    background: #f0a540;
+    background: $yellow;
   }
 
 }

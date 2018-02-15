@@ -1,0 +1,94 @@
+body {
+  font-size: 100%;
+  font-family: 'Open Sans', 'Montserrat', sans-serif;
+}
+
+body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+h1,h2,h3,h4,h5 {
+  margin: 0;   
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: $heading;
+  text-shadow: 0 0 2px $textShadow;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.25;
+  text-align: justify;
+  max-width: 60ch;
+}
+h1 {
+  text-transform: lowercase; 
+  font-size: 2em;
+  line-height: 1.25;
+}
+h2 {
+  text-transform: uppercase; 
+  font-size: 1.625em;
+  line-height: 1.15384615;
+}
+h3 {
+  text-transform: uppercase; 
+  font-size: 1.375em;
+  line-height: 1.13636364;
+}
+h4 {
+  text-transform: uppercase; 
+  font-size: 1.125em;
+  line-height: 1.11111111;
+}
+blockquote {
+  font-size: 1.25em;
+  line-height: 1.25;
+}
+
+
+// 700px
+@media (min-width: 43.75em) { 
+  p {
+    font-size: 1em;
+    line-height: 1.375;
+  }  
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.125;
+  }
+  h2 {
+    font-size: 2em;
+    line-height: 1.25;
+  }
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+  h4 {
+    line-height: 1.22222222;
+  }
+  blockquote {
+    font-size: 1.5em;
+    line-height: 1.45833333;
+  }
+}
+
+// 900
+@media (min-width: 56.25em) { 
+  h1 {
+    font-size: 3em;
+    line-height: 1.05;
+  }
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.25;
+  }
+  h3 {
+    font-size: 1.75em;
+    line-height: 1.25;
+  }
+}
