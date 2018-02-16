@@ -26,15 +26,15 @@ class App extends Component {
     const { location } = this.props
     const isModal = location.state && location.state.modal && this.previousLocation !== location
     return [
-      <Header key='header' />,
+      // <Header key='header' />,
       <main key='content' className='content'>
         <Switch key='routeSwitch' location={isModal ? this.previousLocation : location}>
           <Route exact path='/' component={Landing} />
           <Route component={NotFound} />
         </Switch>
-      </main>,
-      <Footer key='footer' />,
-      <Route key='tracking' path='/' component={tracking} />
+      </main>
+      // <Footer key='footer' />,
+      // <Route key='tracking' path='/' component={tracking} />
     ]
   }
 }
