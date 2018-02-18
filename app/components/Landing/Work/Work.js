@@ -29,10 +29,11 @@ class Work extends Component {
               WEB
             </Button>
           </div>
-          <Game />
-          <div className='gameContainer' />
-          {gameActive && <img className='sideImage' src={lowpoly} alt='lowpoly' />}
+          <div className='gameContainer'>
+            <Game />
+          </div>
         </div>
+        {gameActive && <img className='sideImage' src={lowpoly} alt='lowpoly' />}
       </section>
     )
   }

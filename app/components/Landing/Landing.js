@@ -6,7 +6,7 @@ import 'Landing/landing.scss'
 
 class LandingPage extends Component {
   render() {
-    return [<Intro key='Intro' />, <About key='About' />, <Work key='Work' />, <section key='space' className='space' />]
+    return [<Intro key='Intro' />, <About key='About' />, <Work key='Work' />]
   }
 }
 

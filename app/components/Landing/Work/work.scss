@@ -1,27 +1,73 @@
 .work {
+  position: relative;
+  overflow: hidden;
+  img.sideImage {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+    right: -20em;
+    bottom: 2em;
+  }
   .content {
-    min-height: 1000px;
-    padding: 10em 2em;
+    min-height: 600px;
+    padding: 2em .2em;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     & > * {
       position: relative;
       z-index: 2;
     }
 
-    img {
-      position: absolute;
-      z-index: 1;
-      width: 100%;
-      bottom: 2em;
-    }
 
     .gameContainer {
       margin: 2em 0;
+      width: calc(100% - 2em);
     }
   }
 
   .buttonContainer {
     width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 30em) { 
+  .work {     
+    .content {
+      min-height: 920px;
+      padding: 2em .5em;
+    }
+  }
+  .work img.sideImage {
+    right: -2em;
+  }
+}
+
+@media (min-width: 61.25em) { 
+  .work .content {
+    min-height: 1000px;
+    padding: 10em 2em;
+    align-items: flex-start;
+    .buttonContainer {
+      width: 100%;
+      display: block;
+      justify-content: inherit;
+    }
+  }
+  .work img.sideImage {
+    right: -10em;
+  }
+}
+
+@media (min-width: 80em) { 
+  .work .content {
+    align-items: flex-start;
+    min-height: 1000px;
+    padding: 10em 2em;
+  }
+  .work img.sideImage {
+    right: -10em;
   }
 }
