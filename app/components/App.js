@@ -5,6 +5,7 @@ import NotFound from 'NotFound/NotFound'
 import Header from 'Header/Header'
 import Footer from 'Footer/Footer'
 import Landing from 'Landing/Landing'
+import Test from './Test'
 import './loader.scss'
 
 const tracking = () => {
@@ -26,15 +27,16 @@ class App extends Component {
     const { location } = this.props
     const isModal = location.state && location.state.modal && this.previousLocation !== location
     return [
-      // <Header key='header' />,
-      <main key='content' className='content'>
+      <Header key='header' />,
+      <main key='content'>
         <Switch key='routeSwitch' location={isModal ? this.previousLocation : location}>
           <Route exact path='/' component={Landing} />
+          <Route path='/test' component={Test} />
           <Route component={NotFound} />
         </Switch>
-      </main>
-      // <Footer key='footer' />,
-      // <Route key='tracking' path='/' component={tracking} />
+      </main>,
+      <Footer key='footer' />,
+      <Route key='tracking' path='/' component={tracking} />
     ]
   }
 }

@@ -6,11 +6,11 @@ class ScrollIndicator extends Component {
     const { style } = this.props
     return (
       <div id='scroll' className='scroll' style={style}>
-        <a href='#recent-projects'>
-          <div className='mouse-icon'>
-            <span className='mouse-wheel' />
-          </div>
-        </a>
+        {/* <a href='#recent-projects'> */}
+          {/* <div className='mouse-icon'> */}
+            {/* <span className='mouse-wheel' /> */}
+          {/* </div> */}
+        {/* </a> */}
       </div>
     )
   }

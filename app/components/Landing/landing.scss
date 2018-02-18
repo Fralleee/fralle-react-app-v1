@@ -1,10 +1,5 @@
 @import '../../styles/_colors';
 
-.landingSection {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-bottom: 15rem;
-  min-height: calc(100vh - 100px);
+.space {
+  height: 300vh;
 }

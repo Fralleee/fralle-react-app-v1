@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
-import './Button.scss'
+import './ButtonFlat.scss'
 
-class Button extends Component {
+class ButtonFlat extends Component {
   render() {
     const { className, children } = this.props
     return (
-      <button {...this.props} className={`btn ${className || ''}`}>
+      <button {...this.props} className={`btnflat ${className || ''}`}>
         {children}
       </button>
     )
   }
 }
 
-export default Button
+export default ButtonFlat
