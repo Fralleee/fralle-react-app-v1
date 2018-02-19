@@ -39,8 +39,8 @@ class Intro extends Component {
             <div id='purpleCube' className='cube purple' data-scroll={0.15} />
           </div>
 
-          <p className='skills'>JAVASCRIPT REACT REDUX WEBPACK CSS SQL AZURE C# .NET UNITY BLENDER</p>
         </div>
+          <p className='skills'>JAVASCRIPT REACT REDUX WEBPACK CSS SQL AZURE C# .NET UNITY BLENDER</p>
         {/* <ScrollIndicator /> */}
       </section>
     )
