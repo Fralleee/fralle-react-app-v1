@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ScrollIndicator from 'shared/ScrollIndicator/ScrollIndicator'
 import './intro.scss'
 
 class Intro extends Component {

@@ -20,11 +20,10 @@ class LandingPage extends Component {
             if (entry.intersectionRatio > 0.5) {
               const newcurrent = sections.indexOf(entry.target)
               if (newcurrent === current) return
-              const direction = newcurrent > current
               if (current >= 0) {
-                allentries[current].exit(direction ? 'down' : 'up')
+                allentries[current].exit()
               }
-              allentries[newcurrent].enter(direction ? 'down' : 'up')
+              allentries[newcurrent].enter()
               current = newcurrent
             }
           })
