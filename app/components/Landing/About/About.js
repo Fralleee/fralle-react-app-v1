@@ -6,7 +6,7 @@ import Fluff from '../../../public/images/renders/fluff.png'
 class About extends Component {
   render() {
     return (
-      <section className='about'>
+      <section id='about' className='about'>
         <h1 className='content__text'>About</h1>
         <div className='content'>
           <div className='left'>

@@ -18,7 +18,7 @@ class Work extends Component {
     const gameActive = activeCategory === 'game'
     const webActive = activeCategory === 'web'
     return (
-      <section className='work'>
+      <section id='work' className='work'>
         <h1 className='content__text'>Work</h1>
         <div className='content'>
           <h1 className='xxl'>work.</h1>

@@ -1,14 +1,15 @@
+@import '../../styles/_colors.scss';
   .footer {    
     position: relative;
     padding: 50px 0;
     min-height: 250px;
-    background: #1e1e1e;
+    background: rgb(229,229,229);
     z-index: 20;
     .footer__title {
       width: 100%;
       text-align: center;
       margin: 25px 0;
-      color: #A4A4A4;
+      color: $paragraph;
     }
     .footer__links {      
       display: flex;

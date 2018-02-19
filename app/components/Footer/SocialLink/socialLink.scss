@@ -1,12 +1,13 @@
+@import '../../../styles/_colors.scss';
 .social {
   display: block;
   .path {
-    fill: #949494;
+    fill: $heading;
   }
 
   &:hover {
     .path {
-      fill: #b4b4b4;      
+      fill: $paragraph;      
     }
   }
 }

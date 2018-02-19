@@ -8,7 +8,6 @@ Portfolio (https://www.fralle.com)
 - Add flickity
 
 ### DETAILS
-- Fix header 
 - Fix footer (colors)
 - Kanske koppla på så menyn aktiveras baserat på section
 

@@ -1,5 +1,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions */
 import React, { Component } from 'react'
+import GetOffset from 'utils/getOffset'
+import ScrollTo from 'utils/smoothScroll'
 import './header.scss'
 
 class Header extends Component {
@@ -11,18 +13,29 @@ class Header extends Component {
     this.setState({ show: !this.state.show })
   }
 
+  handleClick = e => {
+    const el = document.getElementById(e.currentTarget.value)
+    const topY = GetOffset(el).top
+    ScrollTo(topY, 50)
+  }
+
   render() {
     const { show } = this.state
     return (
       <header id='header' className='menu'>
         <div className='menu__logo' />
         <div role='button' tabIndex={0} className={`burger ${show ? 'active' : ''}`} onClick={this.showMenu} />
-        <ul className={`nav ${show ? 'show' : ''}`}>
-          <li className='nav__item active'>Home</li>
-          <li className='nav__item'>About</li>
-          <li className='nav__item'>Work</li>
-          <li className='nav__item'>Contact</li>
-        </ul>
+        <div className={`nav ${show ? 'show' : ''}`}>
+          <button value='intro' className='nav__item active' onClick={this.handleClick}>
+            Home
+          </button>
+          <button value='about' className='nav__item' onClick={this.handleClick}>
+            About
+          </button>
+          <button value='work' className='nav__item' onClick={this.handleClick}>
+            Work
+          </button>
+        </div>
       </header>
     )
   }
