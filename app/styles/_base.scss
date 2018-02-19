@@ -23,6 +23,23 @@ body {
     display: flex;
     align-items: center;
   }
+  
+  &:not(.ioapi) .content__text {
+    display: none;
+  }
+  &.ioapi .content__text {
+    display: block;
+    position: fixed;
+    border-left: 3vw solid blue;
+    padding: 0 1vw;
+    left: 2vw;
+    bottom: 4vw;
+    font-weight: bold;
+    background: rgba(245,245,245,.25);
+    opacity: 0;
+    white-space: pre;
+    z-index: 10;
+  }
 
   a:hover {
     text-decoration: none;

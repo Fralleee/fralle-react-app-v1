@@ -19,6 +19,7 @@ class Work extends Component {
     const webActive = activeCategory === 'web'
     return (
       <section className='work'>
+        <h1 className='content__text'>Work</h1>
         <div className='content'>
           <h1 className='xxl'>work.</h1>
           <div className='buttonContainer'>

@@ -24,60 +24,40 @@ module.exports = {
     }
   },
   rules: {
-    quotes: ['warn', 'single', { allowTemplateLiterals: true }],
-    camelcase: 'error',
-    semi: ['error', 'never'],
-    'import/prefer-default-export': 'off',
-    'linebreak-style': 0,
-    'no-console': 'off', // This should be set to warn in production
-    'comma-dangle': ['error', { arrays: 'only-multiline', objects: 'only-multiline' }],
-    'max-len': ['error', { code: 180, comments: 200 }],
-    'import/no-extraneous-dependencies': ['error'],
+    quotes: [1, 'single', { allowTemplateLiterals: true }],
+    camelcase: 1,
+    semi: [1, 'never'],
+    'jsx-a11y/label-has-for': 0,
+    'class-methods-use-this': 0,
+    'eol-last': 1,
+    'comma-dangle': [1, { arrays: 'only-multiline', objects: 'only-multiline' }],
+    'max-len': [2, { code: 180, comments: 200 }],
     'jsx-quotes': [1, 'prefer-single'],
-    'no-mixed-spaces-and-tabs': ['warn', 'smart-tabs'],
-    'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
+    'linebreak-style': [2, 'windows'],
+    'no-console': 0, // This should be set to warn in production
+    'no-plusplus': [2, { allowForLoopAfterthoughts: true }],
+    'no-nested-ternary': 0,
+    'no-underscore-dangle': 0,
+    'no-unused-vars': [1, { argsIgnorePattern: '^action$|^e$|^event$' }],
+    'no-param-reassign': 0,
+    'import/no-unresolved': [2, { ignore: ['./'] }],
+    'import/prefer-default-export': 0,
+    'import/no-extraneous-dependencies': 2,
     'jsx-a11y/anchor-is-valid': [
-      'error',
+      2,
       {
         components: ['Link'],
         specialLink: ['to', 'hrefLeft', 'hrefRight'],
         aspects: ['noHref', 'invalidHref', 'preferButton']
       }
     ],
-    'import/no-unresolved': ['error', { ignore: ['./'] }],
-    'no-nested-ternary': 0,
     'react/no-array-index-key': 0,
     'react/prefer-stateless-function': 0,
     'react/jsx-filename-extension': 0,
-    'react/prop-types': [2, { ignore: ['children', 'style', 'className', 'match', 'history', 'location'] }],
+    'react/prop-types': [1, { ignore: ['children', 'style', 'className'] }],
     'react/forbid-prop-types': 0,
     'react/require-default-props': 0,
-    'class-methods-use-this': 0,
-    'no-underscore-dangle': 0,
-    'no-unused-vars': ['warn', { argsIgnorePattern: '^action$|^e$|^event$' }],
-    'eol-last': 1,
-    'react/sort-comp': 0,
-    'sort-class-members/sort-class-members': [
-      1,
-      {
-        order: ['[properties]', '[lifecycle]', '[handlers]', '[methods]', '[renders]'],
-        groups: {
-          handlers: [{ name: '/on.+/', type: 'method' }, { name: '/handle.+/', type: 'method' }],
-          lifecycle: [
-            'constructor',
-            'componentWillMount',
-            'componentDidMount',
-            'componentWillReceiveProps',
-            'shouldComponentUpdate',
-            'componentWillUpdate',
-            'componentDidUpdate',
-            'componentWillUnmount'
-          ],
-          renders: [{ name: '/render.+/', type: 'method' }, { name: 'render', type: 'method' }]
-        },
-        accessorPairPositioning: 'getThenSet'
-      }
-    ]
+    'react/sort-comp': 0
   },
   settings: {
     'import/resolver': {

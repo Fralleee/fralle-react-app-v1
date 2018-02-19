@@ -25,6 +25,8 @@ class Intro extends Component {
   render() {
     return (
       <section id='intro' className='intro'>
+        <h1 className='content__text'>Intro</h1>
+
         <div className='content'>
           <div id='title' className='title'>
             <h1 className='xxxl'>fralle.</h1>
@@ -38,9 +40,8 @@ class Intro extends Component {
             <div id='tealCube' className='cube teal' data-scroll={1.25} />
             <div id='purpleCube' className='cube purple' data-scroll={0.15} />
           </div>
-
         </div>
-          <p className='skills'>JAVASCRIPT REACT REDUX WEBPACK CSS SQL AZURE C# .NET UNITY BLENDER</p>
+        <p className='skills'>JAVASCRIPT REACT REDUX WEBPACK CSS SQL AZURE C# .NET UNITY BLENDER</p>
         {/* <ScrollIndicator /> */}
       </section>
     )
