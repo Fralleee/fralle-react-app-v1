@@ -4,6 +4,10 @@
   background: #e5e5e5;
   padding: 5em 0;
 
+  .content__text {
+    border-color: $red !important;
+  }
+
   .left {
     position: relative;
     z-index: 2;

@@ -1,6 +1,10 @@
+@import '../../../styles/_colors.scss';
 .work {
   position: relative;
   overflow: hidden;
+  .content__text {
+    border-color: $yellow !important;
+  }
   img.sideImage {
     position: absolute;
     z-index: 1;
