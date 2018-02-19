@@ -1,3 +1,4 @@
+@import '../../styles/_colors.scss';
 .menu {
   position: fixed;
   top: 0;
@@ -9,7 +10,7 @@
   justify-content: flex-end;
   align-items: center;
   padding: 0 25px;
-  background: rgba(245,245,245,.5);
+  background: rgb(245,245,245);
 
   .menu__logo {
     margin-right: auto;
@@ -35,9 +36,9 @@
       right: 5px;
       top: 14px;
       content: '';
-      background: rgb(225,255,255);      
+      background: $paragraph;      
       height: 1px;
-      transition: all 150ms ease-out;
+      transition: all 150ms cubic-bezier(.17,.67,.63,1.55);
     }
     &:after {
       position: absolute;
@@ -45,19 +46,17 @@
       right: 5px;
       bottom: 14px;
       content: '';
-      background: rgb(225,255,255);
+      background: $paragraph;
       height: 1px;
-      transition: all 150ms ease-out;
+      transition: all 150ms cubic-bezier(.17,.67,.63,1.55);
     }    
     &.active {
       &:hover {
         &:after {
-          background: rgb(245,255,255);  
-          box-shadow: 0 0 2px rgba(255,255,255,.9);
+          background: $paragraph;  
         }
         &:before {
-          background: rgb(245,255,255);  
-          box-shadow: 0 0 2px rgba(255,255,255,.9);
+          background: $paragraph;  
         }
       }
       &:after {
@@ -69,11 +68,11 @@
     }
     &:hover:not(.active) {
       &:after {
-        background: rgb(245,255,255);  
+        background: $paragraph;  
         transform: translate(0, 2px);
       }
       &:before {
-        background: rgb(245,255,255);  
+        background: $paragraph;  
         transform: translate(0, -2px);
       }
     }
@@ -133,7 +132,7 @@
       right: 0;
       width: 100%;
       top: 70px;
-      background: rgb(30,30,30);
+      background: rgb(245,245,245);
       display: flex;
       flex-direction: column;
       align-items: center;

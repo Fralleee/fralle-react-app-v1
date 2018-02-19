@@ -15,7 +15,6 @@ class Header extends Component {
     const { show } = this.state
     return (
       <header id='header' className='menu'>
-        ¨
         <div className='menu__logo' />
         <div role='button' tabIndex={0} className={`burger ${show ? 'active' : ''}`} onClick={this.showMenu} />
         <ul className={`nav ${show ? 'show' : ''}`}>
