@@ -25,20 +25,22 @@ body {
   }
   
   &:not(.ioapi) .content__text {
-    display: none;
+    display: none !important;
   }
   &.ioapi .content__text {
-    display: block;
+    display: none;
     position: fixed;
     left: 2.5%;
-    bottom: 7.5%;
+    bottom: 10%;
     border-left: 1.5em solid gray;
     padding: 0 1em;
     font-weight: bold;
     background: rgba(255,255,255,.75);
-    opacity: 0;
+    opacity: 1;
     white-space: pre;
     z-index: 10;
+    visibility: hidden;
+    animation: contentText ease-out 400ms;
   }
 
   a:hover {
@@ -56,4 +58,27 @@ body {
     background: $yellow;
   }
 
+}
+
+@keyframes contentText {
+  from { opacity: 0; transform: scale(1.25); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@media (min-width: 46em) { 
+  &.ioapi .content__text {
+    visibility: visible !important;
+  }
+}
+
+@media (min-width: 61.25em) { 
+  &.ioapi .content__text {
+    visibility: visible !important;
+  }
+}
+
+@media (min-width: 80em) { 
+  &.ioapi .content__text {
+    visibility: visible !important;
+  }
 }

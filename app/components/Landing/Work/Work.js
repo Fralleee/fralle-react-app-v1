@@ -23,10 +23,10 @@ class Work extends Component {
         <div className='content'>
           <h1 className='xxl'>work.</h1>
           <div className='buttonContainer'>
-            <Button className={`yellow ${gameActive ? 'active' : ''}`} value='game' onClick={this.handleCategoryChange} style={{ width: 150 }}>
+            <Button className={`white ${gameActive ? 'active' : ''}`} value='game' onClick={this.handleCategoryChange} style={{ width: 150 }}>
               GAME
             </Button>
-            <Button className={`yellow ${webActive ? 'active' : ''}`} value='web' onClick={this.handleCategoryChange} style={{ width: 150 }}>
+            <Button className={`white ${webActive ? 'active' : ''}`} value='web' onClick={this.handleCategoryChange} style={{ width: 150 }}>
               WEB
             </Button>
           </div>

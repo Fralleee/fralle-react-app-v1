@@ -6,10 +6,10 @@ export default class Entry {
   }
 
   enter() {
-    this.DOM.title.word.style.opacity = 1
+    this.DOM.title.word.style.display = 'block'
   }
 
   exit() {
-    this.DOM.title.word.style.opacity = 0
+    this.DOM.title.word.style.display = 'none'
   }
 }
