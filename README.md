@@ -4,8 +4,11 @@ Portfolio (https://www.fralle.com)
 ## TODO
 
 ### PAW
+- Wrapper = 1366 aka largest breakpoint
+- Img srcset 480x270, 960x720, 1366x768
 - Add modal logic
 - Add flickity
+- Fix responsitivity correctly: define breakpoints custom and use pixels
 
 ### DETAILS
 - Fix footer (colors)
