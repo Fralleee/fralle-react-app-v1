@@ -17,20 +17,17 @@ class LandingPage extends Component {
       observer = new IntersectionObserver(
         entries => {
           entries.forEach(entry => {
-            if (entry.intersectionRatio > 0.5) {
+            if (entry.intersectionRatio >= 0.25) {
               const newcurrent = sections.indexOf(entry.target)
               if (newcurrent === current) return
-              if (current >= 0) {
-                allentries[current].exit()
-              }
+              if (current >= 0) allentries[current].exit()
               allentries[newcurrent].enter()
               current = newcurrent
             }
           })
         },
-        { threshold: 0.5 }
+        { threshold: 0.25 }
       )
-
       sections.forEach(section => allentries.push(new Entry(section, observer)))
     }
   }
