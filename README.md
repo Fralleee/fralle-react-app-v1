@@ -7,6 +7,7 @@ Portfolio (https://www.fralle.com)
   - Sections
   - Project
   - ProjectPage
+- Add flickity css override, maybe load flickity.css into app and change it there?
 - Fix responsitivity correctly: define breakpoints custom and use pixels
 - Fix breakpoints in intro
 
