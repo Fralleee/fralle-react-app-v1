@@ -17,7 +17,7 @@ class Intro extends Component {
 
   componentDidMount() {
     this.title = document.getElementById('title')
-    this.cubes = document.getElementsByClassName('cube')
+    this.cubes = document.getElementsByClassName('parallax__cube')
     window.requestAnimationFrame(this.setScrollParallax)
   }
 
