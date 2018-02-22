@@ -2,6 +2,7 @@
 Portfolio (https://www.fralle.com)
 
 ## TODO
+- Fixa fejkgames och webapps som laddas beroende på knapp
 
 ### PAW
 - Wrapper = 1366 aka largest breakpoint

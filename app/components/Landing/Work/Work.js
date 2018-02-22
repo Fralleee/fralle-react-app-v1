@@ -32,9 +32,15 @@ class Work extends Component {
           </div>
           <div className='gameContainer'>
             <Game />
+            <Game />
+            <Game />
+            <Game />
+            <Game />
+            <Game />
+            <Game />
+            <Game />
           </div>
         </div>
-        {gameActive && <img className='sideImage' src={lowpoly} alt='lowpoly' />}
       </section>
     )
   }
