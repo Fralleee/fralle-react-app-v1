@@ -24,10 +24,10 @@ body {
     align-items: center;
   }
   
-  &:not(.ioapi) .content__text {
+  &:not(.ioapi) .section__text {
     display: none !important;
   }
-  &.ioapi .content__text {
+  &.ioapi .section__text {
     display: none;
     position: fixed;
     left: 2.5%;
@@ -65,20 +65,20 @@ body {
   to { opacity: 1; transform: scale(1); }
 }
 
-@media (min-width: 46em) { 
-  &.ioapi .content__text {
+@media (min-width: 736px) { 
+  &.ioapi .section__text {
     visibility: visible !important;
   }
 }
 
-@media (min-width: 61.25em) { 
-  &.ioapi .content__text {
+@media (min-width: 980px) { 
+  &.ioapi .section__text {
     visibility: visible !important;
   }
 }
 
-@media (min-width: 80em) { 
-  &.ioapi .content__text {
+@media (min-width: 1280px) { 
+  &.ioapi .section__text {
     visibility: visible !important;
   }
 }

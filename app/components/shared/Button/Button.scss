@@ -68,33 +68,33 @@ button::-moz-focus-inner {
       right:10px;
       border-radius:100px / 10px;
   }
-  &.active {
+  &.btn--active {
     background-color: white;
     box-shadow:0 1px 2px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
     color: $paragraph;
   }
-  &.white {
+  &.btn--white {
     &:hover { 
       background-color: white;
       box-shadow:0 1px 1px rgba(0, 0, 0, 0.3), 0 0 5px rgba(0, 0, 0, 0.1) inset;
     } 
   }
-  &.red{ 
+  &.btn--red{ 
     &:hover { background-color: $red; } 
   }
-  &.yellow{ 
+  &.btn--yellow{ 
     &:hover { background-color: $yellow; }
   }
-  &.teal{ 
+  &.btn--teal{ 
     &:hover { background-color: $teal; }
   }
-  &.blue{ 
+  &.btn--blue{ 
     &:hover { background-color: $blue; }
   }
-  &.purple{ 
+  &.btn--purple{ 
     &:hover { background-color: $purple; }
   }
-  &.gray{ 
+  &.btn--gray{ 
     &:hover { background-color: $gray; }
   }
 }

@@ -22,7 +22,7 @@
     align-items: center;
   }
   
-  .burger {
+  .menu__burger {
     position: relative;
     display: none;
     width: 35px; 
@@ -115,9 +115,6 @@
 }
 
 @media screen and (max-width: 700px) {
-  .burger {
-    display: block !important;
-  }
   .menu {
     padding: 0 20px;
     .nav:not(.show) {
@@ -125,6 +122,10 @@
       .nav__item:not(.visible) {
         display: none;
       }
+    }
+    
+    .menu__burger {
+      display: block !important;
     } 
     .nav.show {
       position: absolute;

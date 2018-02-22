@@ -64,8 +64,7 @@ blockquote {
 }
 
 
-// 700px
-@media (min-width: 43.75em) { 
+@media (min-width: 700px) { 
   p {
     font-size: 1em;
     line-height: 1.7;
@@ -103,8 +102,7 @@ blockquote {
   }
 }
 
-// 900
-@media (min-width: 56.25em) { 
+@media (min-width: 900px) { 
   h1.xxxl {
     font-size: 9.25em;
     line-height: 1.25;

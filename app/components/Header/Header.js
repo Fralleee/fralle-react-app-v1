@@ -24,15 +24,15 @@ class Header extends Component {
     return (
       <header id='header' className='menu'>
         <div className='menu__logo' />
-        <div role='button' tabIndex={0} className={`burger ${show ? 'active' : ''}`} onClick={this.showMenu} />
+        <div role='button' tabIndex={0} className={`menu__burger ${show ? 'active' : ''}`} onClick={this.showMenu} />
         <div className={`nav ${show ? 'show' : ''}`}>
-          <button value='intro' className='nav__item active' onClick={this.handleClick}>
+          <button id='btnIntro' value='intro' className='nav__item' onClick={this.handleClick}>
             Home
           </button>
-          <button value='about' className='nav__item' onClick={this.handleClick}>
+          <button id='btnAbout' value='about' className='nav__item' onClick={this.handleClick}>
             About
           </button>
-          <button value='work' className='nav__item' onClick={this.handleClick}>
+          <button id='btnWork' value='work' className='nav__item' onClick={this.handleClick}>
             Work
           </button>
         </div>

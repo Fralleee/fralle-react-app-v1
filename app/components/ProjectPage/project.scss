@@ -1,0 +1,23 @@
+.carousel {
+  background: #EEE;
+  height: 700px;
+}
+
+.carousel-cell {
+  margin-right: 20px;
+  width: 100%;
+  overflow: hidden;
+  height: 700px;
+}
+
+.carousel-cell img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel-cell img {
+    height: 700px;
+  }
+}

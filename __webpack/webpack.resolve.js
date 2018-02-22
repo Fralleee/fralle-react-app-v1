@@ -5,8 +5,8 @@ module.exports = {
   modules: [
     'app/components/Footer',
     'app/components/Header',
-    'app/components/Landing',
-    'app/components/Project',
+    'app/components/LandingPage',
+    'app/components/ProjectPage',
     'app/components/NotFound',
     'app/components/shared',
     'app/components',

@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import Intro from 'Landing/Intro/Intro'
-import About from 'Landing/About/About'
-import Work from 'Landing/Work/Work'
-import 'Landing/landing.scss'
+import Intro from 'LandingPage/Intro/Intro'
+import About from 'LandingPage/About/About'
+import Work from 'LandingPage/Work/Work'
+import 'LandingPage/landing.scss'
 import Entry from './Entry'
 
 class LandingPage extends Component {

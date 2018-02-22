@@ -4,7 +4,8 @@ import ReactGA from 'react-ga'
 import NotFound from 'NotFound/NotFound'
 import Header from 'Header/Header'
 import Footer from 'Footer/Footer'
-import Landing from 'Landing/Landing'
+import Landing from 'LandingPage/Landing'
+import Project from 'ProjectPage/Project'
 import Test from './Test'
 import './loader.scss'
 
@@ -31,6 +32,7 @@ class App extends Component {
       <main key='content'>
         <Switch key='routeSwitch' location={isModal ? this.previousLocation : location}>
           <Route exact path='/' component={Landing} />
+          <Route path='/projects' component={Project} />
           <Route path='/test' component={Test} />
           <Route component={NotFound} />
         </Switch>
