@@ -2,11 +2,11 @@
 Portfolio (https://www.fralle.com)
 
 ### PAW
+- Rename Project / ProjectPage to distinguish
 - Img srcset 480x270, 960x720, 1366x768
   - Sections
   - Project
-- Add flickity
-
+  - ProjectPage
 - Fix responsitivity correctly: define breakpoints custom and use pixels
 - Fix breakpoints in intro
 
