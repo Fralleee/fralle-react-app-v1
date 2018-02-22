@@ -10,7 +10,7 @@ class Project extends Component {
     return (
       <div className='projectLink'>
         <img className='project__image' src={image} alt='project screenshot' />
-        <h2>{title}</h2>
+        <h3>{title}</h3>
         <h4>{category}</h4>
         <Link to='/projects'>
           <Button className='red' style={{ width: 150 }}>

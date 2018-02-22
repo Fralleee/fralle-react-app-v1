@@ -19,21 +19,10 @@
     .content__projectList {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      // justify-content: center;
       margin: 2em 0;
       width: 100%;
-      overflow: hidden;
       z-index: 0;
-      &:after {
-        content: '';
-        position: absolute;
-        left: 10%;
-        top:-10px;
-        bottom: -10px;
-        right:10%;
-        background: rgba(150,150,150,.15);
-        z-index: -2;
-      }
     }
   }
 
