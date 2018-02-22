@@ -7,8 +7,8 @@
   flex: 1;
   min-width: 300px;
   max-width: 480px;
-  margin: 1em;
-  height: 360px;
+  margin: .5em;
+  height: 460px;
   border-radius: 2.5%;
   box-shadow: 0 2px .5em rgba(0,0,0,.5);
 
@@ -51,7 +51,7 @@
     flex: 1;
     min-width: 300px;
     max-width: 480px;
-    margin: 1em;
+    margin: .5em;
     height: 480px;
     box-shadow: 0 2px .75em rgba(0,0,0,.5);
   }
@@ -63,7 +63,7 @@
     min-width: 320px;
     max-width: 480px;
     height: 600px;
-    margin: 1em;
+    margin: .75em;
     box-shadow: 0 4px 1em rgba(0,0,0,.5);
   }
 }
