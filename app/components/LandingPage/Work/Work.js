@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Button from 'shared/Button/Button'
-import Project from 'shared/Project/Project'
+import ProjectLink from 'Work/ProjectLink/ProjectLink'
 import './work.scss'
 
 const games = [
@@ -40,8 +40,8 @@ class Work extends Component {
             </Button>
           </div>
           <div className='content__projectList'>
-            {gameActive && games.map(project => <Project key={project.title} title={project.title} category={project.category} image={project.image} />)}
-            {webActive && webApps.map(project => <Project key={project.title} title={project.title} category={project.category} image={project.image} />)}
+            {gameActive && games.map(projectLink => <ProjectLink key={projectLink.title} title={projectLink.title} category={projectLink.category} image={projectLink.image} />)}
+            {webActive && webApps.map(projectLink => <ProjectLink key={projectLink.title} title={projectLink.title} category={projectLink.category} image={projectLink.image} />)}
           </div>
         </div>
       </section>

@@ -5,6 +5,7 @@ import 'ProjectPage/project.scss'
 class ProjectPage extends Component {
   componentDidMount() {
     const carousel = document.querySelector('.carousel')
+    // eslint-disable-next-line
     const flkty = new Flickity(carousel, {
       imagesLoaded: true,
       wrapAround: true,
