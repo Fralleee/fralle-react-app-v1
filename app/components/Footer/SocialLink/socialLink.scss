@@ -1,13 +1,17 @@
 @import '../../../styles/_colors.scss';
 .social {
   display: block;
+  padding: 0 0.5em;
   .path {
     fill: $heading;
   }
 
-  &:hover {
+  &:hover, &:focus { 
+    outline: none;
+    background: rgba(255,255,255,.1);
+    box-shadow: 0 5px 5px -5px rgba(0,0,0,.15);
     .path {
       fill: $paragraph;      
-    }
+    }    
   }
 }

@@ -103,8 +103,10 @@
       text-align: center;
 
       cursor: pointer;      
-      &:hover {
-        color: rgb(60,60,60);
+      &:hover, &:focus {
+        outline: none;
+        color: rgb(50,50,50);
+        box-shadow: 0 5px 5px -5px rgba(0,0,0,.15);
       }
       &.active{
         color: rgb(75,75,75);
