@@ -2,7 +2,6 @@
 Portfolio (https://www.fralle.com)
 
 ### PAW
-- Fix hot reloading
 - Img srcset 480x270, 960x720, 1366x768
   - Sections
   - Project

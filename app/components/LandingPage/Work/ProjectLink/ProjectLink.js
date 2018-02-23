@@ -1,28 +1,24 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
-import Button from 'shared/Button/ButtonFlat'
 import './projectLink.scss'
 
 class ProjectLink extends Component {
   render() {
-    const { title, category, image } = this.props
+    const { uri, title, category, image } = this.props
+    const renderUri = uri || title.replace(/\s/g, '-').toLowerCase()
     return (
-      <div className='projectLink'>
+      <Link to={`/projects/${renderUri}`} className='projectLink'>
         <img className='projectLink__image' src={image} alt='project screenshot' />
         <h3>{title}</h3>
         <h4>{category}</h4>
-        <Link to='/projects'>
-          <Button className='red' style={{ width: 150 }}>
-            VIEW
-          </Button>
-        </Link>
-      </div>
+      </Link>
     )
   }
 }
 
 ProjectLink.propTypes = {
+  uri: PropTypes.string,
   title: PropTypes.string,
   category: PropTypes.string,
   image: PropTypes.string

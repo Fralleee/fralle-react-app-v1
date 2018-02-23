@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: flex-end;
   padding: 1em;
+  padding-bottom: 2em;
   flex: 1;
   min-width: 300px;
   max-width: 480px;
@@ -11,6 +12,7 @@
   height: 460px;
   border-radius: 2.5%;
   box-shadow: 0 2px .5em rgba(0,0,0,.5);
+  text-decoration: none;
 
   .projectLink__image {
     position: absolute;
