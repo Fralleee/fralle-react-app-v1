@@ -16,6 +16,7 @@ class Header extends Component {
   handleClick = e => {
     const el = document.getElementById(e.currentTarget.value)
     const topY = GetOffset(el).top
+    this.setState({ show: false })
     ScrollTo(topY, 50)
   }
 

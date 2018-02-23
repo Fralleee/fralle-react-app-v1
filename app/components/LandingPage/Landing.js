@@ -3,7 +3,7 @@ import Intro from 'LandingPage/Intro/Intro'
 import About from 'LandingPage/About/About'
 import Work from 'LandingPage/Work/Work'
 import 'LandingPage/landing.scss'
-import Entry from './Entry'
+import SectionText from 'LandingPage/SectionText'
 
 class LandingPage extends Component {
   componentDidMount() {
@@ -17,7 +17,7 @@ class LandingPage extends Component {
       observer = new IntersectionObserver(
         entries => {
           entries.forEach(entry => {
-            if (entry.intersectionRatio >= 0.25) {
+            if (entry.intersectionRatio > 0.25) {
               const newcurrent = sections.indexOf(entry.target)
               if (newcurrent === current) return
               if (current >= 0) allentries[current].exit()
@@ -26,9 +26,9 @@ class LandingPage extends Component {
             }
           })
         },
-        { threshold: 0.25 }
+        { threshold: [0.25, 0.76] }
       )
-      sections.forEach(section => allentries.push(new Entry(section, observer)))
+      sections.forEach(section => allentries.push(new SectionText(section, observer)))
     }
   }
 

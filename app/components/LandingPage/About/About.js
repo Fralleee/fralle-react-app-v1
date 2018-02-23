@@ -6,7 +6,9 @@ class About extends Component {
   render() {
     return (
       <section id='about' className='about'>
-        <h1 className='section__text'>About</h1>
+        <h1 id='aboutText' className='section__text'>
+          About
+        </h1>
         <div className='content'>
           <div className='content__left'>
             <img className='content__image' src={Fluff} alt='fluffy ball' />

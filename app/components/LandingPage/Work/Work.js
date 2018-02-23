@@ -9,7 +9,9 @@ const games = [
   { title: 'ROLLELOCKS', category: 'ARENA / PVP', image: 'https://placeimg.com/478/768/any' },
   { title: 'ONI TAG', category: 'MULTIPLAYER / FUN / TAG', image: 'https://placeimg.com/479/768/any' },
   { title: 'TUBRO ROCKETS', category: 'ARCADE / PVP', image: 'https://placeimg.com/482/768/any' },
-  { title: 'PONG 3D', category: 'ARCADE / RETRO', image: 'https://placeimg.com/481/768/any' }
+  { title: 'PONG 3D', category: 'ARCADE / RETRO', image: 'https://placeimg.com/481/768/any' },
+  { title: 'UNFINISHED', category: 'ADVENTURE', image: 'https://placeimg.com/482/768/any' },
+  { title: 'TBD', category: 'N/A', image: 'https://placeimg.com/483/768/any' }
 ]
 
 const webApps = [
@@ -28,7 +30,9 @@ class Work extends Component {
     const webActive = activeCategory === 'web'
     return (
       <section id='work' className='work'>
-        <h1 className='section__text'>Work</h1>
+        <h1 id='workText' className='section__text'>
+          Work
+        </h1>
         <div className='content'>
           <h1 className='xxl'>work.</h1>
           <div className='content__categorySwitch'>

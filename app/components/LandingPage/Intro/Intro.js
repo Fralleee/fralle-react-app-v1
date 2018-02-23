@@ -24,7 +24,9 @@ class Intro extends Component {
   render() {
     return (
       <section id='intro' className='intro'>
-        <h1 className='section__text'>Intro</h1>
+        <h1 id='introText' className='section__text'>
+          Intro
+        </h1>
 
         <div className='content'>
           <div id='title' className='content__title'>
