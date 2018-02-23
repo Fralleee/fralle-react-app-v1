@@ -102,8 +102,13 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-        loader: 'url-loader?limit=100000'
+        test: /\.md$/,
+        loader: 'html-loader',
+        options: {}
+      },
+      {
+        test: /\.(jpg|jpeg|png|svg|woff|woff2|eot|ttf|pdf|xps)$/,
+        loader: 'url-loader?limit=10000'
       }
     ]
   },

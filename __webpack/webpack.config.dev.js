@@ -8,12 +8,12 @@ const resolve = require('./webpack.resolve')
 
 module.exports = {
   devtool: 'eval',
-  entry: ['babel-polyfill', 'react-hot-loader/patch', 'react-dev-utils/webpackHotDevClient', paths.appIndexJs,],
+  entry: ['babel-polyfill', 'react-hot-loader/patch', 'react-dev-utils/webpackHotDevClient', paths.appIndexJs],
   output: {
     pathinfo: true,
     publicPath: '/',
     filename: 'bundle.min.js',
-    devtoolModuleFilenameTemplate: info => path.resolve(info.absoluteResourcePath),
+    devtoolModuleFilenameTemplate: info => path.resolve(info.absoluteResourcePath)
   },
   resolve,
   module: {
@@ -25,20 +25,20 @@ module.exports = {
         use: [
           {
             options: {
-              formatter: eslintFormatter,
+              formatter: eslintFormatter
             },
-            loader: 'eslint-loader',
-          },
+            loader: 'eslint-loader'
+          }
         ],
-        include: paths.appSrc,
+        include: paths.appSrc
       },
       {
         test: /\.(js|jsx)$/,
         include: paths.appSrc,
         loader: 'babel-loader',
         options: {
-          cacheDirectory: true,
-        },
+          cacheDirectory: true
+        }
       },
       {
         test: /\.(scss|css)/,
@@ -52,23 +52,28 @@ module.exports = {
               plugins: () => [
                 require('postcss-flexbugs-fixes'),
                 autoprefixer({
-                  browsers: ['>1%', 'last 4 versions', 'Firefox ESR', 'not ie < 9',],
-                  flexbox: 'no-2009',
-                }),
-              ],
-            },
+                  browsers: ['>1%', 'last 4 versions', 'Firefox ESR', 'not ie < 9'],
+                  flexbox: 'no-2009'
+                })
+              ]
+            }
           },
-          'sass-loader',
-        ],
+          'sass-loader'
+        ]
+      },
+      {
+        test: /\.md$/,
+        loader: 'html-loader',
+        options: {}
       },
       {
         test: /\.(jpg|jpeg|png|svg|woff|woff2|eot|ttf|pdf|xps)$/,
         loader: 'url-loader',
         options: {
-          limit: 10000,
-        },
-      },
-    ],
+          limit: 10000
+        }
+      }
+    ]
   },
   plugins: [
     new WatchMissingNodeModulesPlugin('node_modules'),
@@ -76,19 +81,19 @@ module.exports = {
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: JSON.stringify('development'),
-      },
+        NODE_ENV: JSON.stringify('development')
+      }
     }),
-    new webpack.HotModuleReplacementPlugin(),
+    new webpack.HotModuleReplacementPlugin()
   ],
   node: {
     dgram: 'empty',
     fs: 'empty',
     net: 'empty',
     tls: 'empty',
-    child_process: 'empty',
+    child_process: 'empty'
   },
   performance: {
-    hints: false,
-  },
+    hints: false
+  }
 }

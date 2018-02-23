@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 import Flickity from 'flickity'
 import 'ProjectPage/project.scss'
+import ReactMarkdown from 'react-markdown'
+import MarkdownExample from './test.md'
+
+const input = '# This is a header\n\nAnd this is a paragraph\n\n\n'
 
 class ProjectPage extends Component {
   componentDidMount() {
@@ -71,6 +75,7 @@ class ProjectPage extends Component {
           </div>
         </div>
         <h1>Project</h1>
+        <ReactMarkdown source={MarkdownExample} />
       </div>
     )
   }
