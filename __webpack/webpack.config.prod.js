@@ -103,8 +103,7 @@ module.exports = {
       },
       {
         test: /\.md$/,
-        loader: 'html-loader',
-        options: {}
+        use: 'raw-loader'
       },
       {
         test: /\.(jpg|jpeg|png|svg|woff|woff2|eot|ttf|pdf|xps)$/,

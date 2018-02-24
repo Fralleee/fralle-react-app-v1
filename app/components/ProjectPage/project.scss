@@ -1,12 +1,14 @@
+.project {
+  padding-top: 70px;
+}
+
 .carousel {
   background: #EEE;
-  height: 700px;
   
   .carousel-cell {
     margin-right: 20px;
     width: 100%;
     overflow: hidden;
-    height: 700px;
     
     img {
       display: block;
@@ -16,10 +18,3 @@
   }
 }
 
-
-
-@media screen and ( min-width: 768px ) {
-  .carousel-cell img {
-    height: 700px;
-  }
-}

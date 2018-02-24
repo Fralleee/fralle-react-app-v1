@@ -8,6 +8,16 @@
   overflow: hidden;
   position: relative;
   height: 100%;
+  &:after {
+    content: '';
+    position: absolute;
+    top:50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 2.5%;
+    background: linear-gradient(transparent, rgba(0,0,0,.5) 100%);
+  }
 }
 
 .flickity-slider {
@@ -81,7 +91,7 @@
 .flickity-page-dots {
   position: absolute;
   width: 100%;
-  bottom: -25px;
+  bottom: 25px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -89,16 +99,17 @@
   line-height: 1;
 }
 
-.flickity-rtl .flickity-page-dots { direction: rtl; }
+.flickity-rtl .flickity-page-dots { 
+  direction: rtl; 
+}
 
 .flickity-page-dots .dot {
   display: inline-block;
   width: 45px;
   height: 10px;
   margin: 0 8px;    
-  background: #333;
-  border-radius: 2px;
-  opacity: 0.25;
+  background: #eee;
+  opacity: 0.35;
   cursor: pointer;
 }
 

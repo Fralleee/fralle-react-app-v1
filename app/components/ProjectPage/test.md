@@ -14,7 +14,7 @@ Changes are automatically rendered as you type.
 </blockquote>
 
 ## How about some code?
-\```js
+```js
 var React = require('react');
 var Markdown = require('react-markdown');
 
@@ -22,7 +22,7 @@ React.render(
   <Markdown source="# Your markdown here" />,
   document.getElementById('content')
 );
-\```
+```
 
 Pretty neat, eh?
 
