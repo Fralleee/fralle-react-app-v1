@@ -6,6 +6,7 @@ import Header from 'Header/Header'
 import Footer from 'Footer/Footer'
 import Landing from 'LandingPage/Landing'
 import Project from 'ProjectPage/Project'
+import ScrollToTop from 'shared/ScrollToTop/ScrollToTop'
 import Test from './Test'
 import './loader.scss'
 
@@ -30,12 +31,14 @@ class App extends Component {
     return [
       <Header key='header' />,
       <main key='content'>
-        <Switch key='routeSwitch' location={isModal ? this.previousLocation : location}>
-          <Route exact path='/' component={Landing} />
-          <Route path='/projects' component={Project} />
-          <Route path='/test' component={Test} />
-          <Route component={NotFound} />
-        </Switch>
+        <ScrollToTop>
+          <Switch key='routeSwitch' location={isModal ? this.previousLocation : location}>
+            <Route exact path='/' component={Landing} />
+            <Route path='/projects' component={Project} />
+            <Route path='/test' component={Test} />
+            <Route component={NotFound} />
+          </Switch>
+        </ScrollToTop>
       </main>,
       <Footer key='footer' />,
       <Route key='tracking' path='/' component={tracking} />

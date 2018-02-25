@@ -10,7 +10,7 @@ Changes are automatically rendered as you type.
 ## HTML block below
 
 <blockquote>
-  This blockquote will change based on the HTML settings above.
+  Little did I know that I would be seeing him naked multiple times later on.
 </blockquote>
 
 ## How about some code?
@@ -24,7 +24,30 @@ React.render(
 );
 ```
 
-Pretty neat, eh?
+Testing this was not as easy as one would have thought. I got really hammered and just decided to knock one out.
+
+Luckily I was not alone. Many of my friends showed up and helped out.
+
+<blockquote>
+  ...but I rarely got time to get hammered and knock one out.
+</blockquote>
+
+```cs
+public class Bengtsson 
+{
+  public int Larsson { get; set; }
+  Start() 
+  {
+    Math.Random(Larsson, 10);
+    Debug.Log("Tested");
+  }
+}
+```
+
+![alt text](https://placeimg.com/360/720/any "Logo Title Text 1")
+<center><em>Dis image, amirite</em></center>
+
+
 
 ## Tables?
 

@@ -3,8 +3,11 @@ import Flickity from 'flickity'
 import 'ProjectPage/project.scss'
 import 'ProjectPage/flickity.scss'
 import 'ProjectPage/markdown.scss'
+import 'ProjectPage/code.scss'
 import ReactMarkdown from 'react-markdown'
 import MarkdownExample from './test.md'
+import CodeRenderer from './CodeRenderer'
+import TestProject from './testProject.json'
 
 const images = ['bajs', 'plutt', 'körv', 'penis', 'mcdragans']
 
@@ -45,8 +48,21 @@ class ProjectPage extends Component {
             </div>
           ))}
         </div>
-        <h1>Project</h1>
-        <ReactMarkdown className='markdown-body' source={MarkdownExample} escapeHtml={false} />
+        <div className='content'>
+          <div className='content--meta'>
+            <h1>{TestProject.title}</h1>
+            <h4>{TestProject.category}</h4>
+            <em>Last updated {TestProject.lastUpdated}</em>
+          </div>
+          <div className='content--links'>
+            {/* 
+              Add icons to all different types
+              Make this an anchor tag
+            */}
+            <ul>{TestProject.links.map(link => <li key={link.type}>{link.url}</li>)}</ul>
+          </div>
+          <ReactMarkdown className='markdown-body' source={MarkdownExample} escapeHtml={false} renderers={{ code: CodeRenderer }} />
+        </div>
       </div>
     )
   }
