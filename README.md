@@ -14,6 +14,8 @@ Portfolio (https://www.fralle.com)
   - Project (content)   720xANY
   - Other Images        ?
 
+- Fix coderenderer or better option to display code
+
 * # PROJECT PAGE
 - Create mockup
 
