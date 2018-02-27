@@ -1,3 +1,9 @@
+
+![alt text](./projects/test-project/content/pic1.jpg "Picture 1")
+
+
+
+
 # Live demo 
 
 Changes are automatically rendered as you type.
@@ -44,7 +50,7 @@ public class Bengtsson
 }
 ```
 
-![alt text](/projects/test-project/Content/pic1.jpeg "Logo Title Text 1")
+![alt text](https://placeimg.com/360/720/any "Logo Title Text 1")
 <center><em>Dis image, amirite</em></center>
 
 

@@ -6,9 +6,9 @@ import './projectLink.scss'
 class ProjectLink extends Component {
   render() {
     const { uri, title, category, image } = this.props
-    const renderUri = uri || title.replace(/\s/g, '-').toLowerCase()
+    // const renderUri = uri || title.replace(/\s/g, '-').toLowerCase()
     return (
-      <Link to={`/projects/${renderUri}`} className='projectLink'>
+      <Link to={`/${uri}`} className='projectLink'>
         <img className='projectLink__image' src={image} alt='project screenshot' />
         <h3>{title}</h3>
         <h4>{category}</h4>

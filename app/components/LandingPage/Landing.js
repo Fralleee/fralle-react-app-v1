@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Intro from 'LandingPage/Intro/Intro'
 import About from 'LandingPage/About/About'
-import Work from 'LandingPage/Work/Work'
+import Work from 'containers/Work'
 import 'LandingPage/landing.scss'
 import SectionText from 'LandingPage/SectionText'
 
