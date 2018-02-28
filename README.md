@@ -18,20 +18,20 @@ Live: (https://www.fralle.com)
 - Sections(index): Header, Welcome, Work, About, Footer
 
 # Github API
-const instance = axios.create({
-  baseURL: 'https://api.github.com/',
-  timeout: 1000,
-  headers: { Accept: 'application/vnd.github.v3+json' }
-})
-
-instance.get('/users/Fralleee/repos').then(res => {
-  const data = res.data.filter(x => !x.fork)
-  const mappedData = data.map(item => ({ name: item.name, description: item.description }))
-  console.log(mappedData)
-  mappedData.forEach(item => {
-    instance.get(`/repos/Fralleee/${item.name}/readme`).then(res2 => console.log(atob(res2.data.content)))
+  const instance = axios.create({
+    baseURL: 'https://api.github.com/',
+    timeout: 1000,
+    headers: { Accept: 'application/vnd.github.v3+json' }
   })
-})
+
+  instance.get('/users/Fralleee/repos').then(res => {
+    const data = res.data.filter(x => !x.fork)
+    const mappedData = data.map(item => ({ name: item.name, description: item.description, updated: item.updated_at, url: item.html_url, language: item.language }))
+    console.log(mappedData)
+    mappedData.forEach(item => {
+      instance.get(`/repos/Fralleee/${item.name}/readme`).then(res2 => console.log(atob(res2.data.content)))
+    })
+  })
 
 # Project content (old, needs to be refactored)
 - Meta data:
