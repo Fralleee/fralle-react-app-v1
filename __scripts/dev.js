@@ -12,7 +12,7 @@ const openBrowser = require('react-dev-utils/openBrowser')
 const paths = require('../__webpack/paths')
 const config = require('../__webpack/webpack.config.dev')
 const createDevServerConfig = require('../__webpack/webpack.devServer')
-const proxy = require('../__webpack/webpack.proxy')
+// const proxy = require('../__webpack/webpack.proxy')
 
 const APPNAME = require(paths.appPackageJson).name
 const DEFAULT_PORT = 3000
@@ -20,7 +20,8 @@ const HOST = process.env.HOST || '0.0.0.0'
 const PROTOCOL = process.env.HTTPS === 'true' ? 'https' : 'http'
 const urls = prepareUrls(PROTOCOL, HOST, DEFAULT_PORT)
 const compiler = createCompiler(webpack, config, APPNAME, urls)
-const serverConfig = createDevServerConfig(proxy(PROTOCOL, urls.lanUrlForConfig, process.env.port || 3001), urls.lanUrlForConfig)
+// proxy(PROTOCOL, urls.lanUrlForConfig, process.env.port || 3001)
+const serverConfig = createDevServerConfig(null, urls.lanUrlForConfig)
 
 const devServer = new WebpackDevServer(compiler, serverConfig)
 devServer.listen(DEFAULT_PORT, HOST, err => {

@@ -16,6 +16,10 @@ Portfolio (https://www.fralle.com)
 
 - Fix coderenderer or better option to display code
 
+- Gör klart sidan
+- Lägg upp öppet på github
+- Lägg in som webprojekt med all data
+
 * # PROJECT PAGE
 - Create mockup
 
@@ -33,3 +37,34 @@ Portfolio (https://www.fralle.com)
       Link: 480x768
       Flickity: 480x270, 960x720, 1366x768, 1920x1080
       Markdown: 720xANY
+
+
+# Todo fralle.com:
+
+
+# fralle.com v2:
+- Minimalistic design
+- Wrapped in 980px
+- No 100vh sections
+- No carousel
+- Blog-section
+  - Maybe use frontend RTE (quill, react-quill)
+  - Save posts to backend
+  - Backend api
+
+
+# Github API
+const instance = axios.create({
+  baseURL: 'https://api.github.com/',
+  timeout: 1000,
+  headers: { Accept: 'application/vnd.github.v3+json' }
+})
+
+instance.get('/users/Fralleee/repos').then(res => {
+  const data = res.data.filter(x => !x.fork)
+  const mappedData = data.map(item => ({ name: item.name, description: item.description }))
+  console.log(mappedData)
+  mappedData.forEach(item => {
+    instance.get(`/repos/Fralleee/${item.name}/readme`).then(res2 => console.log(atob(res2.data.content)))
+  })
+})

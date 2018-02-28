@@ -1,6 +1,6 @@
 const paths = require('./paths')
 
-module.exports = function (proxy, allowedHost) {
+module.exports = function(proxy, allowedHost) {
   return {
     contentBase: paths.appPublic,
     publicPath: '/',
@@ -13,7 +13,7 @@ module.exports = function (proxy, allowedHost) {
     port: 3000,
     host: process.env.HOST || '0.0.0.0',
     public: allowedHost,
-    proxy,
+    // proxy,
     hot: true,
     inline: true,
     disableHostCheck: true,
@@ -23,6 +23,6 @@ module.exports = function (proxy, allowedHost) {
     open: true,
     overlay: false,
     historyApiFallback: true,
-    clientLogLevel: 'none',
+    clientLogLevel: 'none'
   }
 }
