@@ -31,12 +31,9 @@ module.exports = {
   appHtml: resolveApp('app/public/index.html'),
   appIndexJs: resolveApp('app/index.js'),
   appPackageJson: resolveApp('package.json'),
-  serverBuild: resolveApp('buildServer'),
-  serverSrc: resolveApp('server'),
-  serverIndexJs: resolveApp('server/index.js'),
   yarnLockFile: resolveApp('yarn.lock'),
   testsSetup: resolveApp('src/setupTests.js'),
   appNodeModules: resolveApp('node_modules'),
   publicUrl: getPublicUrl(resolveApp('package.json')),
-  servedPath: getServedPath(resolveApp('package.json')),
+  servedPath: getServedPath(resolveApp('package.json'))
 }
