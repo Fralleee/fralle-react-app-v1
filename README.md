@@ -2,11 +2,17 @@
 Live: (https://www.fralle.com)
 
 # Todo fralle.com:
-- Fix markup viewer
-- Fix coderenderer or better option to display code
-- Publish code on github
++ Fix markdown viewer
++ Fix coderenderer or better option to display code
+
+- Cleanup layout and texts
+
+- Publish code on github 
+- Take screenshots
+- Refactor readme.md with screenshots
 
 # fralle.com v3:
+## Info
 - Minimalistic design
 - Wrapped in 980px
 - No 100vh sections
@@ -16,6 +22,14 @@ Live: (https://www.fralle.com)
 - Keywords: Compact, Professional, Minimalistic
 - Pages: Index, About, Project (dynamic + custom renderer)
 - Sections(index): Header, Welcome, Work, About, Footer
+
+## Todo
+- Mockup (1200px, 480px): index, about, project(default renderer)
+
+- Remove unecessary code from old version
+
+- Apply github API with sagas to fetch repos
+
 
 # Github API
   const instance = axios.create({

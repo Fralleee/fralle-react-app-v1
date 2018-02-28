@@ -3,7 +3,6 @@ import Flickity from 'flickity'
 import 'ProjectPage/project.scss'
 import 'ProjectPage/flickity.scss'
 import 'ProjectPage/code.scss'
-import CodeRenderer from './CodeRenderer'
 import TestProject from './testProject.json'
 
 const images = ['bajs', 'plutt', 'körv', 'penis', 'mcdragans']
