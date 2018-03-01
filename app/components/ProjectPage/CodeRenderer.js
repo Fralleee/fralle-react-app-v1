@@ -6,7 +6,6 @@ import Lowlight from 'react-lowlight'
 import js from 'highlight.js/lib/languages/javascript'
 import cs from 'highlight.js/lib/languages/cs'
 
-// Then register them with lowlight
 Lowlight.registerLanguage('js', js)
 Lowlight.registerLanguage('cs', cs)
 

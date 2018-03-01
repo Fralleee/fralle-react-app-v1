@@ -25,10 +25,9 @@ Live: (https://www.fralle.com)
 
 ## Todo
 - Mockup (1200px, 480px): index, about, project(default renderer)
-
 - Remove unecessary code from old version
-
 - Apply github API with sagas to fetch repos
+- React-gist for markdown posts?
 
 
 # Github API
