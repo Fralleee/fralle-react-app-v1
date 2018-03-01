@@ -43,14 +43,6 @@ class ProjectMeta extends Component {
             </div>
           ))}
         </div>
-        <div className='content'>
-          <div className='content--meta'>
-            <pre>{JSON.stringify(this.props, null, 2)}</pre>
-          </div>
-          <div className='content--links'>
-            <ul>{TestProject.links.map(link => <li key={link.type}>{link.url}</li>)}</ul>
-          </div>
-        </div>
       </div>
     )
   }
