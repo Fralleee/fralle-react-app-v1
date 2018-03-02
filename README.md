@@ -21,4 +21,4 @@ Page is live at https://www.fralle.com/v1
 - IntersectionObserver scroll logic for display active menu item & section headlines
 
 ## Screenshot
-![Alt text](https://i.imgur.com/QVTPE4e.jpg "Screenshot")
+![Alt text](https://i.imgur.com/QVTPE4e.jpg width=480 "Screenshot")
