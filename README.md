@@ -22,3 +22,6 @@ Page is live at https://www.fralle.com/v1
 
 ## Screenshot
 ![Alt text](https://i.imgur.com/QVTPE4e.jpg width=480 "Screenshot")
+
+![](https://i.imgur.com/QVTPE4e.jpg =250x250)
+
