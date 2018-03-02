@@ -25,3 +25,4 @@ Page is live at https://www.fralle.com/v1
 
 ![](https://i.imgur.com/QVTPE4e.jpg =250x250)
 
+<img src="https://i.imgur.com/QVTPE4e.jpg" width="480">
