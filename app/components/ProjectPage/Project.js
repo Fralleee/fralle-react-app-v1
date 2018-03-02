@@ -11,11 +11,13 @@ const code = `
 class ProjectPage extends Component {
   render() {
     return (
-      <div className='project--body'>
-        <h1>This is the default renderer</h1>
-        <p>This is meant to be used to render github readme.md markdown</p>
-        <ReactMarkdown source={input} escapeHtml renderers={{ code: CodeRenderer }} />
-        <ReactMarkdown source={code} escapeHtml renderers={{ code: CodeRenderer }} />
+      <div className='project'>
+        <div className='content'>
+          <h1>This is the default renderer</h1>
+          <p>This is meant to be used to render github readme.md markdown</p>
+          <ReactMarkdown source={input} escapeHtml renderers={{ code: CodeRenderer }} />
+          <ReactMarkdown source={code} escapeHtml renderers={{ code: CodeRenderer }} />
+        </div>
       </div>
     )
   }
