@@ -7,7 +7,7 @@ Project was discontinued 2018-03-02
 
 
 ## Demo
-Page is live at https://www.fralle.com/v1
+Page is live at https://fralleee.github.io/fra-v1/
 
 <em>Since the .htaccess does not load the v1 index as default page the react routes wont work on refresh.</em>
 
