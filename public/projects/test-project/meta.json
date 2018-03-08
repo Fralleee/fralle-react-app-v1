@@ -1,0 +1,36 @@
+{
+  "title": "Test Project",
+  "category": "game",
+  "subTitle": "ACTION / RPG / STRATEGY",
+  "lastUpdated": "2018-02-25",
+  "links": [
+    { 
+      "type":"github",
+      "url": "https://github.com/Fralleee/fralle-react-app"
+    },
+    { 
+      "type":"live",
+      "url": "https://github.com/Fralleee/fralle-react-app"
+    },
+    { 
+      "type":"download",
+      "url": "https://github.com/Fralleee/fralle-react-app"
+    },
+    { 
+      "type":"play",
+      "url": "https://github.com/Fralleee/fralle-react-app"
+    },
+    { 
+      "type":"apple",
+      "url": "https://github.com/Fralleee/fralle-react-app"
+    },
+    { 
+      "type":"steam",
+      "url": "https://github.com/Fralleee/fralle-react-app"
+    },
+    { 
+      "type":"itch",
+      "url": "https://github.com/Fralleee/fralle-react-app"
+    }
+  ]
+}
