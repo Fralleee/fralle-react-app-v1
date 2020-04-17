@@ -1,5 +1,5 @@
-# fralle-react-app-v1
-Portfolio/about page made with React & Redux
+# fralle-react-app-v2
+Portfolio/about page made with React & Mobx
 
 Originally intended for fralle.com but was never fully finished.
 
