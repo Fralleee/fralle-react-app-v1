@@ -7,18 +7,7 @@ Project was discontinued 2018-03-02
 
 
 ## Demo
-Page is live at https://fralleee.github.io/fra-v1/
-
-<em>Since the .htaccess does not load the v1 index as default page the react routes wont work on refresh.</em>
-
-## Features
-- Landing page with intro, about, work-sections
-- Header & footer
-- Project page with default renderer / specific renderer
-- Markdown renderer
-- Code renderer / highlighter
-- Parallax scrolling
-- IntersectionObserver scroll logic for display active menu item & section headlines
+Page is live at https://fralle.com/
 
 ## Screenshot
-<img src="https://i.imgur.com/QVTPE4e.jpg" width="480" alt="Screenshot">
+<img src="https://i.imgur.com/5TjX5Td.png" width="480" alt="Screenshot">
